@@ -1,7 +1,8 @@
 // Import the functions you need from the SDKs you need
-
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
+
 
 
 const firebaseConfig = {
@@ -22,6 +23,8 @@ const app = initializeApp(firebaseConfig);
 // Initialize Cloud Firestore and get a reference to the service
 const db = getFirestore(app);
 
+// Get a reference to the storage service, which is used to create references in your storage bucket
+const storage = getStorage(app);
 
-export default db
+export {db, storage}
 

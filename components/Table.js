@@ -30,7 +30,7 @@ export default function BasicTable({ rows }) {
 
   const handleEdit = (e) => {
     e.preventDefault();
-    router.push("/Edit");
+    router.push("/edit");
   };
 
   const handleDelete = (e) => {
@@ -51,15 +51,15 @@ export default function BasicTable({ rows }) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map(({ name, num_stambuk: numStambuk, sector, address }) => (
+          {rows.map(({ name, num_stambuk, sector, address }) => (
             <TableRow
-              key={numStambuk}
+              key={num_stambuk}
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
               <TableCell component="th" scope="row">
                 {name}
               </TableCell>
-              <TableCell align="right">{numStambuk}</TableCell>
+              <TableCell align="right">{num_stambuk}</TableCell>
               <TableCell align="right">{sector}</TableCell>
               <TableCell align="right">{address}</TableCell>
               <TableCell align="right">
