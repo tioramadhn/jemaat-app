@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "jemaat-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,18 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@date-io/moment": "^2.13.1",
-    "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
-    "@mui/icons-material": "^5.6.2",
-    "@mui/material": "^5.6.2",
-    "@mui/x-date-pickers": "^5.0.0-alpha.1",
-    "firebase": "^9.6.11",
-    "moment": "^2.29.3",
     "next": "12.1.5",
     "react": "18.0.0",
-    "react-dom": "18.0.0",
-    "react-firebase-hooks": "^5.0.3"
+    "react-dom": "18.0.0"
   },
   "devDependencies": {
     "eslint": "8.14.0",
