@@ -75,7 +75,6 @@ export default function Add() {
       });
     };
     getData()
-    // console.log(data);
   }, [data]);
 
 
